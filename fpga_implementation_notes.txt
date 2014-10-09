@@ -1,0 +1,15 @@
+
+
+---------------
+10/07/2014
+
+
+-- Ref: WARP FPGA implementation notes
+
+Getting started with OFDM reference design: 
+http://warpproject.org/trac/wiki/OFDMReferenceDesign
+
+How to setup project in Xilinx:
+http://warpproject.org/trac/wiki/OFDMReferenceDesign/SDK
+
+

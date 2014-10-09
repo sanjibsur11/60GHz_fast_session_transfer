@@ -1,0 +1,27 @@
+#############################################################
+# Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+# 
+# You may copy and modify these files for your own internal
+# use solely with Xilinx programmable logic devices and
+# Xilinx EDK system or create IP modules solely for Xilinx
+# programmable logic devices and Xilinx EDK system.
+# No rights are granted to distribute any files unless they
+# are distributed in Xilinx programmable logic devices.
+#
+# Peripheral Analyze Order (PAO) file
+# created by System Generator
+# Aug 13, 2012 8:02:00 PM
+#############################################################
+
+lib ofdm_txrx_supermimo_coded_plbw_v4_01_e fec_decoder_top verilog
+lib ofdm_txrx_supermimo_coded_plbw_v4_01_e fec_decoder_rest verilog
+lib ofdm_txrx_supermimo_coded_plbw_v4_01_e fec_encoder verilog
+lib ofdm_txrx_supermimo_coded_plbw_v4_01_e ofdm_txrx_supermimo_coded vhdl
+lib ofdm_txrx_supermimo_coded_plbw_v4_01_e block_memory_generator_virtex6_6_3_83e3bf6fae7ffe3b vhdl
+lib ofdm_txrx_supermimo_coded_plbw_v4_01_e block_memory_generator_virtex6_6_3_8aed8dbaea13f2ec vhdl
+lib ofdm_txrx_supermimo_coded_plbw_v4_01_e block_memory_generator_virtex6_6_3_7d0f296add6c1932 vhdl
+lib ofdm_txrx_supermimo_coded_plbw_v4_01_e block_memory_generator_virtex6_6_3_29970a1ccea6e03b vhdl
+lib ofdm_txrx_supermimo_coded_plbw_v4_01_e block_memory_generator_virtex6_6_3_2946513ff8459d63 vhdl
+lib ofdm_txrx_supermimo_coded_plbw_v4_01_e block_memory_generator_virtex6_6_3_3f3b21ad7dafdea5 vhdl
+lib ofdm_txrx_supermimo_coded_plbw_v4_01_e ofdm_txrx_supermimo_coded_cw vhdl
+lib ofdm_txrx_supermimo_coded_plbw_v4_01_e ofdm_txrx_supermimo_coded_plbw vhdl
