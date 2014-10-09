@@ -13,3 +13,5 @@ How to setup project in Xilinx:
 http://warpproject.org/trac/wiki/OFDMReferenceDesign/SDK
 
 Download Xilink ISE system design software
+
+Installed the Xilinx ISE system design software
