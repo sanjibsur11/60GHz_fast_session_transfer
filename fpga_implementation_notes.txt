@@ -29,4 +29,5 @@ to make it real-time processing.
 Step4: Implementation for switching logic between one WARP board to another
 Step5: Real-time channel estimation from multiple WARPs. We need at least two 
 WARP board and we need to get data from multiple WARP boards together.
-Step6: Final integration for the multiple WARP communication.
+Step6: Final integration for the multiple WARP communication and 5 to 60 and 60
+to 5 GHz switching.
