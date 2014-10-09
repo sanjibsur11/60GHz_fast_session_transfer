@@ -14,4 +14,19 @@ http://warpproject.org/trac/wiki/OFDMReferenceDesign/SDK
 
 Download Xilink ISE system design software
 
+
+---------------
+10/09/2014
+
+
 Installed the Xilinx ISE system design software
+
+Step1: Compile and run the OFDM reference design of the WARPLab 
+Step2: Checkout how to modify the MAC code in C (should not take more time)
+Step3: Modify and generate the FPGA code of OFDM and replace with OOK 
+modulation. Verify that the OOK modulation can be integrated with the MAC code 
+to make it real-time processing.
+Step4: Implementation for switching logic between one WARP board to another
+Step5: Real-time channel estimation from multiple WARPs. We need at least two 
+WARP board and we need to get data from multiple WARP boards together.
+Step6: Final integration for the multiple WARP communication.
