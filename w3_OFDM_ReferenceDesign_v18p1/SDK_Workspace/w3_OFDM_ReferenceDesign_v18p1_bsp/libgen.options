@@ -1,0 +1,3 @@
+PROCESSOR=microblaze_0
+REPOSITORIES=-lp S:/work/OFDM_ref_design/public/w3_OFDM_ReferenceDesign_v18p1 -lp S:/edk_user_repository
+HWSPEC=../w3_OFDM_ReferenceDesign_v18p1_hw_platform/system.xml

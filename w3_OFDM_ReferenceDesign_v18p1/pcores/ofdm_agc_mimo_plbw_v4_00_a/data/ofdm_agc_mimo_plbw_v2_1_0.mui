@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!--
+########################################################################
+##
+## Copyright (c) 2010 Xilinx, Inc.  All rights reserved.
+##
+########################################################################
+-->
+
+<!DOCTYPE doc SYSTEM "sg_ipdialog.dtd" [
+<!ENTITY C_BASEADDR '
+<widget id="C_BASEADDR">
+    <key>C_BASEADDR</key>
+    <label>C_BASEADDR</label>
+    <tip>Base Address</tip>
+</widget>
+'>
+<!ENTITY C_HIGHADDR '
+<widget id="C_HIGHADDR">
+    <key>C_HIGHADDR</key>
+    <label>C_HIGHADDR</label>
+    <tip>High Address</tip>
+</widget>
+'>
+<!ENTITY C_MEMMAP_GRF_A '
+<widget id="C_MEMMAP_GRF_A">
+    <key>C_MEMMAP_GRF_A</key>
+    <label>C_MEMMAP_GRF_A</label>
+    <tip>From Register
+    data type: UFix_2_0</tip>
+</widget>
+'>
+<!ENTITY C_MEMMAP_GRF_B '
+<widget id="C_MEMMAP_GRF_B">
+    <key>C_MEMMAP_GRF_B</key>
+    <label>C_MEMMAP_GRF_B</label>
+    <tip>From Register
+    data type: UFix_2_0</tip>
+</widget>
+'>
+<!ENTITY C_MEMMAP_GBB_B '
+<widget id="C_MEMMAP_GBB_B">
+    <key>C_MEMMAP_GBB_B</key>
+    <label>C_MEMMAP_GBB_B</label>
+    <tip>From Register
+    data type: UFix_5_0</tip>
+</widget>
+'>
+<!ENTITY C_MEMMAP_GBB_A '
+<widget id="C_MEMMAP_GBB_A">
+    <key>C_MEMMAP_GBB_A</key>
+    <label>C_MEMMAP_GBB_A</label>
+    <tip>From Register
+    data type: UFix_5_0</tip>
+</widget>
+'>
+<!ENTITY C_MEMMAP_BITS_R '
+<widget id="C_MEMMAP_BITS_R">
+    <key>C_MEMMAP_BITS_R</key>
+    <label>C_MEMMAP_BITS_R</label>
+    <tip>From Register
+    data type: UFix_10_0</tip>
+</widget>
+'>
+<!ENTITY C_MEMMAP_BITS_W '
+<widget id="C_MEMMAP_BITS_W">
+    <key>C_MEMMAP_BITS_W</key>
+    <label>C_MEMMAP_BITS_W</label>
+    <tip>To Register
+    data type: UFix_10_0</tip>
+</widget>
+'>
+<!ENTITY C_MEMMAP_GBB_INIT '
+<widget id="C_MEMMAP_GBB_INIT">
+    <key>C_MEMMAP_GBB_INIT</key>
+    <label>C_MEMMAP_GBB_INIT</label>
+    <tip>To Register
+    data type: UFix_16_0</tip>
+</widget>
+'>
+<!ENTITY C_MEMMAP_ADJ '
+<widget id="C_MEMMAP_ADJ">
+    <key>C_MEMMAP_ADJ</key>
+    <label>C_MEMMAP_ADJ</label>
+    <tip>To Register
+    data type: UFix_16_0</tip>
+</widget>
+'>
+<!ENTITY C_MEMMAP_DCO_IIR_COEF_FB '
+<widget id="C_MEMMAP_DCO_IIR_COEF_FB">
+    <key>C_MEMMAP_DCO_IIR_COEF_FB</key>
+    <label>C_MEMMAP_DCO_IIR_COEF_FB</label>
+    <tip>To Register
+    data type: Fix_18_17</tip>
+</widget>
+'>
+<!ENTITY C_MEMMAP_THRESHOLDS '
+<widget id="C_MEMMAP_THRESHOLDS">
+    <key>C_MEMMAP_THRESHOLDS</key>
+    <label>C_MEMMAP_THRESHOLDS</label>
+    <tip>To Register
+    data type: UFix_32_0</tip>
+</widget>
+'>
+<!ENTITY C_MEMMAP_TIMING '
+<widget id="C_MEMMAP_TIMING">
+    <key>C_MEMMAP_TIMING</key>
+    <label>C_MEMMAP_TIMING</label>
+    <tip>To Register
+    data type: UFix_32_0</tip>
+</widget>
+'>
+<!ENTITY C_MEMMAP_DCO_IIR_COEF_GAIN '
+<widget id="C_MEMMAP_DCO_IIR_COEF_GAIN">
+    <key>C_MEMMAP_DCO_IIR_COEF_GAIN</key>
+    <label>C_MEMMAP_DCO_IIR_COEF_GAIN</label>
+    <tip>To Register
+    data type: UFix_18_17</tip>
+</widget>
+'>
+<!ENTITY C_MEMMAP_AVG_LEN '
+<widget id="C_MEMMAP_AVG_LEN">
+    <key>C_MEMMAP_AVG_LEN</key>
+    <label>C_MEMMAP_AVG_LEN</label>
+    <tip>To Register
+    data type: UFix_16_0</tip>
+</widget>
+'>
+<!ENTITY C_MEMMAP_AGC_EN '
+<widget id="C_MEMMAP_AGC_EN">
+    <key>C_MEMMAP_AGC_EN</key>
+    <label>C_MEMMAP_AGC_EN</label>
+    <tip>To Register
+    data type: UFix_1_0</tip>
+</widget>
+'>
+<!ENTITY C_MEMMAP_DCO_TIMING '
+<widget id="C_MEMMAP_DCO_TIMING">
+    <key>C_MEMMAP_DCO_TIMING</key>
+    <label>C_MEMMAP_DCO_TIMING</label>
+    <tip>To Register
+    data type: UFix_32_0</tip>
+</widget>
+'>
+<!ENTITY C_MEMMAP_T_DB '
+<widget id="C_MEMMAP_T_DB">
+    <key>C_MEMMAP_T_DB</key>
+    <label>C_MEMMAP_T_DB</label>
+    <tip>To Register
+    data type: UFix_16_0</tip>
+</widget>
+'>
+<!ENTITY C_MEMMAP_MRESET_IN '
+<widget id="C_MEMMAP_MRESET_IN">
+    <key>C_MEMMAP_MRESET_IN</key>
+    <label>C_MEMMAP_MRESET_IN</label>
+    <tip>To Register
+    data type: UFix_1_0</tip>
+</widget>
+'>
+<!ENTITY C_MEMMAP_SRESET_IN '
+<widget id="C_MEMMAP_SRESET_IN">
+    <key>C_MEMMAP_SRESET_IN</key>
+    <label>C_MEMMAP_SRESET_IN</label>
+    <tip>To Register
+    data type: UFix_1_0</tip>
+</widget>
+'>
+]>
+
+<doc>
+<view id="Memory Map Information">
+    <display>Memory Map Information</display>
+    <group id="All">
+        <display>All</display>
+        <item>&C_BASEADDR;</item>
+        <item>&C_MEMMAP_GRF_A;</item>
+        <item>&C_MEMMAP_GRF_B;</item>
+        <item>&C_MEMMAP_GBB_B;</item>
+        <item>&C_MEMMAP_GBB_A;</item>
+        <item>&C_MEMMAP_BITS_R;</item>
+        <item>&C_MEMMAP_BITS_W;</item>
+        <item>&C_MEMMAP_GBB_INIT;</item>
+        <item>&C_MEMMAP_ADJ;</item>
+        <item>&C_MEMMAP_DCO_IIR_COEF_FB;</item>
+        <item>&C_MEMMAP_THRESHOLDS;</item>
+        <item>&C_MEMMAP_TIMING;</item>
+        <item>&C_MEMMAP_DCO_IIR_COEF_GAIN;</item>
+        <item>&C_MEMMAP_AVG_LEN;</item>
+        <item>&C_MEMMAP_AGC_EN;</item>
+        <item>&C_MEMMAP_DCO_TIMING;</item>
+        <item>&C_MEMMAP_T_DB;</item>
+        <item>&C_MEMMAP_MRESET_IN;</item>
+        <item>&C_MEMMAP_SRESET_IN;</item>
+    </group>
+    <group id="From/To Registers">
+        <display>From/To Registers</display>
+        <item>&C_BASEADDR;</item>
+        <item>&C_MEMMAP_GRF_A;</item>
+        <item>&C_MEMMAP_GRF_B;</item>
+        <item>&C_MEMMAP_GBB_B;</item>
+        <item>&C_MEMMAP_GBB_A;</item>
+        <item>&C_MEMMAP_BITS_R;</item>
+        <item>&C_MEMMAP_BITS_W;</item>
+        <item>&C_MEMMAP_GBB_INIT;</item>
+        <item>&C_MEMMAP_ADJ;</item>
+        <item>&C_MEMMAP_DCO_IIR_COEF_FB;</item>
+        <item>&C_MEMMAP_THRESHOLDS;</item>
+        <item>&C_MEMMAP_TIMING;</item>
+        <item>&C_MEMMAP_DCO_IIR_COEF_GAIN;</item>
+        <item>&C_MEMMAP_AVG_LEN;</item>
+        <item>&C_MEMMAP_AGC_EN;</item>
+        <item>&C_MEMMAP_DCO_TIMING;</item>
+        <item>&C_MEMMAP_T_DB;</item>
+        <item>&C_MEMMAP_MRESET_IN;</item>
+        <item>&C_MEMMAP_SRESET_IN;</item>
+    </group>
+    <group id="From/To FIFOs">
+        <display>From/To FIFOs</display>
+        <item>&C_BASEADDR;</item>
+    </group>
+    <group id="Shared Memories">
+        <display>Shared Memories</display>
+        <item>&C_BASEADDR;</item>
+    </group>
+</view>
+</doc>
