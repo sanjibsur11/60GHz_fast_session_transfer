@@ -19,7 +19,7 @@ Download Xilink ISE system design software
 10/09/2014
 
 
-Installed the Xilinx ISE system design software
+Installed the Xilinx ISE 14.4 system design software
 
 Step1: Compile and run the OFDM reference design of the WARPLab 
 Step2: Checkout how to modify the MAC code in C (should not take more time)
