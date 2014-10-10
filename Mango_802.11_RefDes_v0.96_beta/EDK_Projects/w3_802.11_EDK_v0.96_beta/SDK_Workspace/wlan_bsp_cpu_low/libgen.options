@@ -1,3 +1,0 @@
-PROCESSOR=mb_low
-REPOSITORIES=-lp C:/Users/mango/Desktop/testing/802_11_v0_96/Mango_802.11_RefDes_v0.96_beta/EDK_Projects/w3_802.11_EDK_v0.96_beta -lp C:/WARP_Repository/edk_user_repository
-HWSPEC=../Mango_802.11_RefDes_v0.96_hw_platform/system.xml
