@@ -1,2 +1,8 @@
-% Testing Axis360 controller code
+% Testing Axis360 controller slider and rotator code
 %
+
+close all;
+clear all;
+clc;
+
+
