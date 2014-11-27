@@ -29,21 +29,21 @@ function axis360_out = axis360_rotate(dev_id, axis360, offset_ang, reset, defaul
 		readasync(axis360);
 		% Set the pulse rate
 		fprintf(axis360, sprintf('pr 1 %d\r\n', default_params.pulse_rate));
-		print_serial_data(axis360);
+		print_serial_data(dev_id, axis360);
 		fprintf(axis360, sprintf('zm 1\r\n'));	
-		print_serial_data(axis360);
+		print_serial_data(dev_id, axis360);
 	end
 	% Reset the motor
 	if reset == 1
-		print_serial_data(axis360);
+		print_serial_data(dev_id, axis360);
                 fprintf(axis360, sprintf('zm 1\r\n'));
-		print_serial_data(axis360);
+		print_serial_data(dev_id, axis360);
 	else
-		print_serial_data(axis360);
+		print_serial_data(dev_id, axis360);
 		% Convert to motor angle
 		angle = round(offset_ang/360*default_params.angle_factor);
 		fprintf(axis360, sprintf('mm 1 %d\r\n', angle));
-		print_serial_data(axis360);
+		print_serial_data(dev_id, axis360);
 	end
 	% Assign new state of the serial obj to output
 	axis360_out = axis360;
@@ -51,9 +51,9 @@ end
 
 
 % Prints the serial object data
-function [] = print_serial_data(axis360)
+function [] = print_serial_data(dev_id, axis360)
 	if isempty(axis360)
-		fprintf('Serial obj. not ready for communication!\n', axis360);
+		fprintf('Serial obj. not ready for communication!\n', dev_id);
 		return;
 	end
 	while(axis360.BytesAvailable>0)
