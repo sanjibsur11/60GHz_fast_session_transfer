@@ -11,7 +11,7 @@ default_params.baud_rate = 57600;
 default_params.pulse_rate = 5000;
 default_params.angle_factor = 32000;
 % For rotator device
-dev_id_rotate = '/dev/ttyUSB9';
+dev_id_rotate = 'COM6';
 
 serial_rotate = [];
 angle = 0;
