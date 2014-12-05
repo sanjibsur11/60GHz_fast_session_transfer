@@ -1,7 +1,7 @@
 % Test file to check Axis360 controller single rotator code
 %
-% Distance to angle conversion formula: y = 0.02x + 10
-% x: angle; y = dist
+% Distance to angle conversion formula: angle = 50 * dist
+% 
 
 close all;
 clear all;

@@ -16,6 +16,7 @@
 % 
 
 function axis360_out = axis360_rotate(dev_id, axis360, offset_ang, reset, default_params)
+
 	% If the serial object is not opened, open it first 
 	if isempty(axis360)
 		axis360 = serial(dev_id);
@@ -48,11 +49,13 @@ function axis360_out = axis360_rotate(dev_id, axis360, offset_ang, reset, defaul
 	end
 	% Assign new state of the serial obj to output
 	axis360_out = axis360;
+    
 end
 
 
 % Prints the serial object data
 function [] = print_serial_data(dev_id, axis360)
+
 	if isempty(axis360)
 		fprintf('Serial obj. not ready for communication!\n', dev_id);
 		return;
@@ -60,5 +63,6 @@ function [] = print_serial_data(dev_id, axis360)
 	while(axis360.BytesAvailable>0)
 		serialdata = fscanf(axis360);
 		fprintf('%s\n', serialdata);
-	end
+    end
+    
 end
